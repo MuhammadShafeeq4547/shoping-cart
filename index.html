@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoping Cart</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .main {
+            width: 100%;
+        }
+
+        .container {
+            width: 960px;
+            height: max-content;
+            margin: auto;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .products {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+
+        .products p {
+            margin-top: 5px;
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+        .products button {
+            width: 90px;
+            height: 30px;
+            background-color: blue;
+            outline: none;
+            border: none;
+            font-size: 14px;
+            font-weight: 500;
+            color: white;
+            margin-top: 15px;
+            cursor: pointer;
+        }
+
+        .products button:hover {
+            background-color: rgb(21, 182, 241);
+            cursor: pointer;
+        }
+
+        .add {
+            width: 25%;
+            padding: 20px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+            text-align: center;
+            box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .page {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .page button {
+            background-color: #f9f9f9;
+            border: none;
+            padding: 5px 10px;
+            margin: 0 5px;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .page button:hover {
+            background-color: rgba(128, 128, 128, 0.645);
+        }
+
+        .cart {
+            margin-top: 50px;
+        }
+
+        .div {
+            border: 1px solid #ccc;
+            padding: 20px;
+            background-color: #f9f9f9;
+            box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <h1>Shopping Cart</h1>
+            <div class="products"></div>
+            <div class="page"></div>
+            <div class="cart">
+                <h2>Your Cart</h2>
+                <div class="div"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
